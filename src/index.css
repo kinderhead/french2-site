@@ -17,4 +17,5 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
     --bs-body-bg: whitesmoke;
+    --margin-left-img: 225px;
 }
