@@ -8,7 +8,8 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <React.StrictMode>
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<App>French website :)<br/>New line</App>}/>
+                <Route path="/french2-site" element={<App>French website :)<br/>New line</App>}/>
+                <Route path="*" element={<App>404 Page not found</App>}/>
             </Routes>
         </BrowserRouter>
     </React.StrictMode>,
