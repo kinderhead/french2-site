@@ -1,0 +1,43 @@
+#root {
+    text-align: center;
+    width: 100%;
+}
+
+.center {
+    --margin-left-img: 225px;
+
+    width: max-content;
+    float: left;
+    width: calc(100% - var(--margin-left-img) * 2);
+    margin-left: var(--margin-left-img);
+}
+
+.side {
+    position: fixed;
+    height: 100vh;
+}
+
+.left {
+    left: 0;
+    float: left;
+}
+
+.right {
+    right: 0;
+    float: right;
+}
+
+@media screen and not (min-width: 700px) {
+    .left {
+        display: none;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .center {
+        margin-left: 0;
+        width: 100%;
+    }
+}
