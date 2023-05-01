@@ -9,13 +9,14 @@ export interface RemoteMarkdownProps {
 export default function RemoteMarkdown({ src } : RemoteMarkdownProps) {
     const [data, setData] = useState<string>();
 
+    fetch(src).then((response) => response.text()).then((textContent) => setData(textContent));
+
     if (data == undefined) {
-        fetch(src).then((response) => response.text()).then((textContent) => setData(textContent));
         return (
             <>
-                <Placeholder xs={15} />
-                <Placeholder xs={32} />
-                <Placeholder xs={14} />
+                <Placeholder xs={15} /> <br/>
+                <Placeholder xs={32} /> <br/>
+                <Placeholder xs={14} /> <br/>
                 <Placeholder xs={5} />
             </>
         );

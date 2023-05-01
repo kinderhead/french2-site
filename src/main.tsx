@@ -2,13 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom'
 import fileUrl from './assets/cover.jpg'
 import RemoteMarkdown from './Markdown.tsx'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <React.StrictMode>
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path="/french2-site" element={
                     <>
@@ -25,6 +25,6 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                 <Route path="/french2-site/passé-composé-avoir-written-key" element={<App><RemoteMarkdown src="/french2-site/passe-avoir-written-key.md"/></App>}></Route>
                 <Route path="*" element={<App>404 Page not found</App>} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     </React.StrictMode>,
 )
