@@ -19,3 +19,9 @@
     --bs-body-bg: whitesmoke;
     --margin-left-img: 225px;
 }
+
+.center-obj {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

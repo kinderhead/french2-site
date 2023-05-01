@@ -7,8 +7,7 @@ import './Content.css'
 import { PropsWithChildren } from 'react';
 import { NavDropdown } from 'react-bootstrap';
 
-export default function Content(props: PropsWithChildren<object>)
-{
+export default function Content(props: PropsWithChildren<object>) {
     return (
         <>
             <Navbar bg="light" expand="lg" sticky="top">
@@ -23,9 +22,11 @@ export default function Content(props: PropsWithChildren<object>)
                                 <Nav.Link>Les pronoms objets directs et indirects</Nav.Link>
                             </LinkContainer>
                             <NavDropdown title="Verb tenses/moods">
-                                <LinkContainer to="/french2-site/passé-composé-avoir">
-                                    <NavDropdown.Item>Le passé composé avec avoir</NavDropdown.Item>
-                                </LinkContainer>
+                                <NavDropdown drop="end" title="Le passé composé avec avoir">
+                                    <LinkContainer to="/french2-site/passé-composé-avoir-written">
+                                        <NavDropdown.Item>Written activity</NavDropdown.Item>
+                                    </LinkContainer>
+                                </NavDropdown>
                                 <LinkContainer to="/french2-site/passé-composé-être">
                                     <NavDropdown.Item>Le passé composé avec être</NavDropdown.Item>
                                 </LinkContainer>
@@ -42,6 +43,9 @@ export default function Content(props: PropsWithChildren<object>)
                                     <NavDropdown.Item>Le futur simple</NavDropdown.Item>
                                 </LinkContainer>
                             </NavDropdown>
+                            <LinkContainer to="/french2-site/funnies">
+                                <Nav.Link>Funny images</Nav.Link>
+                            </LinkContainer>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
