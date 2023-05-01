@@ -14,9 +14,9 @@ export default function RemoteMarkdown({ src } : RemoteMarkdownProps) {
     if (data == undefined) {
         return (
             <>
-                <Placeholder xs={15} /> <br/>
-                <Placeholder xs={32} /> <br/>
-                <Placeholder xs={14} /> <br/>
+                <Placeholder xs={4} /> <br/>
+                <Placeholder xs={3} /> <br/>
+                <Placeholder xs={7} /> <br/>
                 <Placeholder xs={5} />
             </>
         );

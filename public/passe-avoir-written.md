@@ -1,6 +1,6 @@
-> ## **Le Passé Composé avec Avoir**
+## **Le Passé Composé avec Avoir**
 
-> Translate the following sentences from French into English in the space provided. Then negate the sentence.
+Translate the following sentences from French into English in the space provided. Then negate the sentence.
 
 1. Elle a mangé la pomme.
 
