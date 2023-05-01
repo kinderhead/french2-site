@@ -1,5 +1,4 @@
 > ## **Le Passé Composé avec Avoir**
-> *L'activité écrite numero un*
 
 > Translate the following sentences from French into English in the space provided. Then negate the sentence.
 
@@ -7,7 +6,7 @@
 
 2. Est-ce que vous avons travaillé sur votre devoirs?
 
-3. J'ai fermé la port.
+3. J'ai fermé la porte.
 
 4. Nous avons parlé avec ton professeurs.
 

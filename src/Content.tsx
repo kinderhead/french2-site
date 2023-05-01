@@ -22,9 +22,12 @@ export default function Content(props: PropsWithChildren<object>) {
                                 <Nav.Link>Les pronoms objets directs et indirects</Nav.Link>
                             </LinkContainer>
                             <NavDropdown title="Verb tenses/moods">
-                                <NavDropdown drop="end" title="Le passé composé avec avoir">
+                                <NavDropdown drop="end" title="Le passé composé avec avoir" className="fix-nav">
                                     <LinkContainer to="/french2-site/passé-composé-avoir-written">
                                         <NavDropdown.Item>Written activity</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/french2-site/passé-composé-avoir-written-key">
+                                        <NavDropdown.Item>Written activity - Key</NavDropdown.Item>
                                     </LinkContainer>
                                 </NavDropdown>
                                 <LinkContainer to="/french2-site/passé-composé-être">

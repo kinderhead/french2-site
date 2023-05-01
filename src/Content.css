@@ -4,3 +4,9 @@
     margin: 0;
     text-align: left;
 }
+
+.fix-nav {
+    --bs-navbar-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.25rem;
+    --bs-nav-link-color: var(--bs-dropdown-link-color);
+}
