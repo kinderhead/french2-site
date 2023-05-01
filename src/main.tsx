@@ -17,8 +17,10 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                             <RemoteMarkdown src="/french2-site/main.md"/>
                         </App>
                     </>
-                } />
-                <Route path="/french2-site/funnies" element={<App><img src="/french2-site/1.png"/><img src="/french2-site/2.png"/></App>}></Route>
+                }/>
+                <Route path="/french2-site/funnies" element={
+                    <App><img src="/french2-site/1.png" /><img src="/french2-site/2.png" /></App>
+                }></Route>
                 <Route path="/french2-site/passé-composé-avoir-written" element={<App><RemoteMarkdown src="/french2-site/passe-avoir-written.md"/></App>}></Route>
                 <Route path="/french2-site/passé-composé-avoir-written-key" element={<App><RemoteMarkdown src="/french2-site/passe-avoir-written-key.md"/></App>}></Route>
                 <Route path="*" element={<App>404 Page not found</App>} />
