@@ -40,3 +40,18 @@
         width: 100%;
     }
 }
+
+@media print {
+    .side {
+        visibility: hidden;
+    }
+
+    .navbar-toggler {
+        visibility: hidden;
+    }
+
+    .center {
+        margin-left: 0;
+        width: 100%;
+    }
+}
