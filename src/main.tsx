@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                 <Route path="/" element={
                     <>
                         <App>
-                            <img src={fileUrl} className="center-obj" />
+                            <img src={fileUrl} style={{float: "right"}} />
                             <RemoteMarkdown src="/french2-site/main.md"/>
                         </App>
                     </>
