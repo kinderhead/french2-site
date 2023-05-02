@@ -26,11 +26,20 @@ export default function Content(props: PropsWithChildren<object>) {
                             </LinkContainer>
                             <NavDropdown title="Verb tenses/moods">
                                 <NavDropdown drop="end" title="Le passé composé avec avoir" className="fix-nav">
-                                    <LinkContainer to="/passe-avoir-written">
-                                        <NavDropdown.Item>Written activity</NavDropdown.Item>
+                                    <LinkContainer to="/passe-avoir">
+                                        <NavDropdown.Item>Description</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/passe-avoir-oral">
+                                        <NavDropdown.Item>Oral activity</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/passe-avoir-written-1">
+                                        <NavDropdown.Item>Written activity 1</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/passe-avoir-written-2">
+                                        <NavDropdown.Item>Written activity 2</NavDropdown.Item>
                                     </LinkContainer>
                                     <LinkContainer to="/passe-avoir-written-key">
-                                        <NavDropdown.Item>Written activity - Key</NavDropdown.Item>
+                                        <NavDropdown.Item>Written activities key</NavDropdown.Item>
                                     </LinkContainer>
                                 </NavDropdown>
                                 <LinkContainer to="/passe-etre">
@@ -45,9 +54,11 @@ export default function Content(props: PropsWithChildren<object>) {
                                 <LinkContainer to="/subjonctif">
                                     <NavDropdown.Item>Le subjonctif</NavDropdown.Item>
                                 </LinkContainer>
-                                <LinkContainer to="/futur">
-                                    <NavDropdown.Item>Le futur simple</NavDropdown.Item>
-                                </LinkContainer>
+                                <NavDropdown drop="end" title="Le futur simple" className="fix-nav">
+                                    <LinkContainer to="/futur-test">
+                                        <NavDropdown.Item>Test</NavDropdown.Item>
+                                    </LinkContainer>
+                                </NavDropdown>
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>

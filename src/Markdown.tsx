@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Placeholder } from "react-bootstrap";
 import ReactMarkdown from 'react-markdown'
+import remarkGfm from "remark-gfm";
 
 export interface RemoteMarkdownProps {
     src: string;
@@ -23,7 +24,7 @@ export default function RemoteMarkdown({ src } : RemoteMarkdownProps) {
     } else {
         return (
             <>
-                <ReactMarkdown>{data}</ReactMarkdown>
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>{data}</ReactMarkdown>
             </>
         );
     }

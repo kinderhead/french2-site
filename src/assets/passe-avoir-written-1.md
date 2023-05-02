@@ -1,4 +1,4 @@
-## **Le Passé Composé avec Avoir**
+## **Le passé composé avec avoir**
 
 Translate the following sentences from French into English in the space provided. Then negate the sentence.
 
