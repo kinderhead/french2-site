@@ -19,10 +19,10 @@ export default function Content(props: PropsWithChildren<object>) {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav navbarScroll>
                             <LinkContainer to="/directs-indirects">
-                                <Nav.Link>Les pronoms objets directs et indirects</Nav.Link>
+                                <Nav.Link>Les pronoms objets</Nav.Link>
                             </LinkContainer>
                             <LinkContainer to="/litteraires">
-                                <Nav.Link>Littérature et les éléments littéraires</Nav.Link>
+                                <Nav.Link>Les éléments littéraires</Nav.Link>
                             </LinkContainer>
                             <NavDropdown title="Verb tenses/moods">
                                 <NavDropdown drop="end" title="Le passé composé avec avoir" className="fix-nav">
@@ -60,6 +60,11 @@ export default function Content(props: PropsWithChildren<object>) {
                                     </LinkContainer>
                                 </NavDropdown>
                             </NavDropdown>
+                            {/* <NavDropdown title="Tools">
+                                <LinkContainer to="/test-maker">
+                                    <NavDropdown.Item>Test maker</NavDropdown.Item>
+                                </LinkContainer>
+                            </NavDropdown> */}
                         </Nav>
                     </Navbar.Collapse>
                     <Navbar.Collapse className="justify-content-end">

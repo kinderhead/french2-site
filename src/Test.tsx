@@ -1,5 +1,5 @@
-import { createRef } from "react";
-import { Button, Form } from "react-bootstrap";
+import { createRef, useState } from "react";
+import { Alert, Button, Form } from "react-bootstrap";
 
 export interface TestProps {
     questions: TestQuestion[];
@@ -13,30 +13,57 @@ export interface TestQuestion {
 
 export default function Test({ questions }: TestProps) {
     var form = createRef<HTMLFormElement>();
+    var button = createRef<HTMLButtonElement>();
+    var [score, setScore] = useState<JSX.Element>();
 
     return (
         <>
-            <Form ref={form}>
-                <Form.Group controlId="test">
+            <Form ref={form} key="test-base">
+                <Form.Group controlId="test" key="test">
                     {
-                        questions.map((question) => {
+                        questions.map((i) => {
                             return (
                                 <>
-                                    <Form.Label>{question.question}</Form.Label>
+                                    <hr/>
+                                    <Form.Label key={i.question}>{i.question}</Form.Label>
                                     {
-                                        question.answers.map((answer) => {
-                                            return <Form.Check type="radio" id={question.question + "-" + answer} label={answer} name={question.question}></Form.Check>
+                                        i.answers.map((answer) => {
+                                            return <Form.Check type="radio" id={i.question + "-" + answer} key={i.question + "-" + answer} label={answer} name={i.question}></Form.Check>
                                         })
                                     }
                                 </>
                             );
                         })
                     }
-                <Button onClick={() => {
-                    
+                <hr/>
+                <Button ref={button} key="submit" onClick={() => {
+                        var correct = 0;
+                        questions.forEach(i => {
+                            var radio: HTMLInputElement | null = document.getElementById(i.question + "-" + i.answers[i.correct]) as HTMLInputElement;
+                            if (radio.checked) correct++;
+                            i.answers.forEach(e => {
+                                (document.getElementById(i.question + "-" + e) as HTMLInputElement).disabled = true;
+                            });
+                        });
+                        console.log(correct);
+                        var scoreCalc = Math.round(correct / questions.length * 100);
+                        
+                        if (scoreCalc >= 90) {
+                            setScore(<Alert variant="success">{"Score: " + scoreCalc.toString() + "%"}</Alert>);
+                        } else if (scoreCalc >= 70) {
+                            setScore(<Alert variant="warning">{"Score: " + scoreCalc.toString() + "%"}</Alert>);
+                        } else {
+                            setScore(<Alert variant="danger">{"Score: " + scoreCalc.toString() + "%"}</Alert>);
+                        }
+
+                        if (button.current != null) {
+                            button.current.disabled = true;
+                        }
                 }}>Finish</Button>
                 </Form.Group>
             </Form>
+            <br/>
+            {score}
         </>
     );
 }
