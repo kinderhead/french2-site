@@ -26,7 +26,6 @@ import conditionnel_written_1_md from './assets/conditionnel-written-1.md'
 import conditionnel_written_2_md from './assets/conditionnel-written-2.md'
 import pronoms_description_md from './assets/pronoms-description.md'
 import Test from './Test.tsx'
-import TestMaker from './TestMaker.tsx'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
@@ -70,7 +69,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                 <Route path="/conditionnel-written-1" element={<App><RemoteMarkdown src={conditionnel_written_1_md} /></App>}></Route>
                 <Route path="/conditionnel-written-2" element={<App><RemoteMarkdown src={conditionnel_written_2_md} /></App>}></Route>
                 <Route path="/pronoms-description" element={<App><RemoteMarkdown src={pronoms_description_md} /></App>}></Route>
-                <Route path="/test-maker" element={<App><TestMaker></TestMaker></App>} />
+                {/* <Route path="/test-maker" element={<App><TestMaker></TestMaker></App>} /> */}
                 <Route path="*" element={<App>404 Page not found</App>} />
             </Routes>
         </HashRouter>
