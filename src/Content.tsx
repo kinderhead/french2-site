@@ -18,9 +18,11 @@ export default function Content(props: PropsWithChildren<object>) {
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav navbarScroll>
-                            <LinkContainer to="/directs-indirects">
-                                <Nav.Link>Les pronoms objets</Nav.Link>
-                            </LinkContainer>
+                            <NavDropdown title="Les pronoms objets">
+                                <LinkContainer to="/pronoms-description">
+                                    <Nav.Link>Description</Nav.Link>
+                                </LinkContainer>
+                            </NavDropdown>
                             <LinkContainer to="/litteraires">
                                 <Nav.Link>Les éléments littéraires</Nav.Link>
                             </LinkContainer>
