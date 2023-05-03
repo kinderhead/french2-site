@@ -19,11 +19,14 @@
 .left {
     left: 0;
     float: left;
+    background-color: blue;
 }
 
 .right {
     right: 0;
     float: right;
+    background-color: red;
+    transform: scaleX(-1);
 }
 
 @media (max-width: 750px) {

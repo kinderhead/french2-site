@@ -13,7 +13,7 @@ export default function Content(props: PropsWithChildren<object>) {
             <Navbar bg="light" expand="xl" sticky="top">
                 <Container fluid>
                     <LinkContainer to="/">
-                        <Navbar.Brand>MSSM French 211</Navbar.Brand>
+                        <Navbar.Brand>MSSM French 211U</Navbar.Brand>
                     </LinkContainer>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -48,15 +48,50 @@ export default function Content(props: PropsWithChildren<object>) {
                                 <LinkContainer to="/imparfait">
                                     <NavDropdown.Item>L’imparfait</NavDropdown.Item>
                                 </LinkContainer>
-                                <LinkContainer to="/conditionnel">
-                                    <NavDropdown.Item>Le conditionnel</NavDropdown.Item>
-                                </LinkContainer>
+                                <NavDropdown drop="end" title="Le conditionnel" className="fix-nav">
+                                    <LinkContainer to="/conditionnel">
+                                        <NavDropdown.Item>Description</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/conditionnel-written-1">
+                                        <NavDropdown.Item>Written activity 1</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/conditionnel-written-2">
+                                        <NavDropdown.Item>Written activity 2</NavDropdown.Item>
+                                    </LinkContainer>
+                                </NavDropdown>
                                 <LinkContainer to="/subjonctif">
                                     <NavDropdown.Item>Le subjonctif</NavDropdown.Item>
                                 </LinkContainer>
                                 <NavDropdown drop="end" title="Le futur simple" className="fix-nav">
+                                    <LinkContainer to="/futur-description">
+                                        <NavDropdown.Item>Description</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/futur-written-1">
+                                        <NavDropdown.Item>Written activity 1</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/futur-written-2">
+                                        <NavDropdown.Item>Written activity 2</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/futur-oral-1">
+                                        <NavDropdown.Item>Oral activity 1</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/futur-oral-2">
+                                        <NavDropdown.Item>Oral activity 2</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/futur-oral-3">
+                                        <NavDropdown.Item>Oral activity 3</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/futur-cheatsheet">
+                                        <NavDropdown.Item>Cheatsheet</NavDropdown.Item>
+                                    </LinkContainer>
                                     <LinkContainer to="/futur-test">
                                         <NavDropdown.Item>Test</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/futur-written-quiz">
+                                        <NavDropdown.Item>Written quiz</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/futur-written-key">
+                                        <NavDropdown.Item>Written activities key</NavDropdown.Item>
                                     </LinkContainer>
                                 </NavDropdown>
                             </NavDropdown>
