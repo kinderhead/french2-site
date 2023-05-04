@@ -47,6 +47,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                             <img src="/french2-site/2.png" />
                             <img src="/french2-site/3.png" />
                             <img src="/french2-site/4.jpg" />
+                            <img src="/french2-site/5.png" />
                         </div>
                     </App>
                 }></Route>

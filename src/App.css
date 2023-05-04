@@ -19,13 +19,13 @@
 .left {
     left: 0;
     float: left;
-    background-color: blue;
+    background-color: #002654;
 }
 
 .right {
     right: 0;
     float: right;
-    background-color: red;
+    background-color: #ED2939;
     transform: scaleX(-1);
 }
 
