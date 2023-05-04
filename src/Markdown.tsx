@@ -2,12 +2,14 @@ import { useState } from "react";
 import { Placeholder } from "react-bootstrap";
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from "remark-gfm";
+import './markdown.css'
 
 export interface RemoteMarkdownProps {
     src: string;
+    className?: string;
 }
 
-export default function RemoteMarkdown({ src } : RemoteMarkdownProps) {
+export default function RemoteMarkdown({ src, className } : RemoteMarkdownProps) {
     const [data, setData] = useState<string>();
 
     fetch(src).then((response) => response.text()).then((textContent) => setData(textContent));
@@ -24,7 +26,7 @@ export default function RemoteMarkdown({ src } : RemoteMarkdownProps) {
     } else {
         return (
             <>
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>{data}</ReactMarkdown>
+                <ReactMarkdown className={"markdown " + className} remarkPlugins={[remarkGfm]}>{data}</ReactMarkdown>
             </>
         );
     }

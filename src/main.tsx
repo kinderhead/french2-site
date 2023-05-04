@@ -20,7 +20,7 @@ import futur_oral_1_md from './assets/futur-oral-1.md'
 import futur_oral_2_md from './assets/futur-oral-2.md'
 import futur_oral_3_md from './assets/futur-oral-3.md'
 import futur_cheatsheet_md from './assets/futur-cheatsheet.md'
-import futur_description_md from './assets/futur-description.md'
+import futur_md from './assets/futur.md'
 import conditionnel_md from './assets/conditionnel.md'
 import conditionnel_written_1_md from './assets/conditionnel-written-1.md'
 import conditionnel_written_2_md from './assets/conditionnel-written-2.md'
@@ -64,8 +64,8 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                 <Route path="/futur-oral-2" element={<App><RemoteMarkdown src={futur_oral_2_md} /></App>}></Route>
                 <Route path="/futur-oral-3" element={<App><RemoteMarkdown src={futur_oral_3_md} /></App>}></Route>
                 <Route path="/futur-cheatsheet" element={<App><RemoteMarkdown src={futur_cheatsheet_md} /></App>}></Route>
-                <Route path="/futur-description" element={<App><RemoteMarkdown src={futur_description_md} /></App>}></Route>
-                <Route path="/conditionnel" element={<App><RemoteMarkdown src={conditionnel_md} /></App>}></Route>
+                <Route path="/futur-description" element={<App><RemoteMarkdown src={futur_md} className="no-head"/></App>}></Route>
+                <Route path="/conditionnel" element={<App><RemoteMarkdown src={conditionnel_md} className="no-head"/></App>}></Route>
                 <Route path="/conditionnel-written-1" element={<App><RemoteMarkdown src={conditionnel_written_1_md} /></App>}></Route>
                 <Route path="/conditionnel-written-2" element={<App><RemoteMarkdown src={conditionnel_written_2_md} /></App>}></Route>
                 <Route path="/pronoms-description" element={<App><RemoteMarkdown src={pronoms_description_md} /></App>}></Route>
