@@ -8,7 +8,7 @@ In french there are direct and indirect object pronouns, the *complément d’ob
 For CODs, ask the question "**Who? or What?**"
 For COIs: COIs are are the people or things in a sentence **to or for whom/what** the action of the verb occurs.
 
-|The French Indirect Object Pronouns| The French Direct Object Pronouns |
+|Indirect Object Pronouns | Direct Object Pronouns |
 |--|--|
 |Me / m’ = (to/for) me | Me / m’ = me|
 |Te / t’ = (to/for) you|Te / t’ = you|
