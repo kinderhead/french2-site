@@ -13,7 +13,7 @@ export default function Content(props: PropsWithChildren<object>) {
             <Navbar bg="light" expand="xl" sticky="top">
                 <Container fluid>
                     <LinkContainer to="/">
-                        <Navbar.Brand>MSSM French 211U</Navbar.Brand>
+                        <Navbar.Brand>MSSM French</Navbar.Brand>
                     </LinkContainer>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
