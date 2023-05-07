@@ -20,6 +20,7 @@ export default function RemoteMarkdown({ src, className } : RemoteMarkdownProps)
                 <Placeholder xs={4} /> <br/>
                 <Placeholder xs={3} /> <br/>
                 <Placeholder xs={7} /> <br/>
+                <Placeholder xs={4} /> <br/>
                 <Placeholder xs={5} />
             </>
         );
