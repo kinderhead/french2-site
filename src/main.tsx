@@ -8,7 +8,8 @@ import RemoteMarkdown from './Markdown.tsx'
 
 import main_md from './assets/main.md'
 import passe_avoir_md from './assets/passe-avoir.md'
-import passe_avoir_oral_md from './assets/passe-avoir-oral.md'
+import passe_avoir_oral_1_md from './assets/passe-avoir-oral-1.md'
+import passe_avoir_oral_2_md from './assets/passe-avoir-oral-2.md'
 import passe_avoir_written_1_md from './assets/passe-avoir-written-1.md'
 import passe_avoir_written_2_md from './assets/passe-avoir-written-2.md'
 import passe_avoir_written_key_md from './assets/passe-avoir-written-key.md'
@@ -21,11 +22,13 @@ import futur_oral_2_md from './assets/futur-oral-2.md'
 import futur_oral_3_md from './assets/futur-oral-3.md'
 import futur_cheatsheet_md from './assets/futur-cheatsheet.md'
 import futur_md from './assets/futur.md'
+import imparfait_md from './assets/imparfait.md'
 import conditionnel_md from './assets/conditionnel.md'
 import conditionnel_written_1_md from './assets/conditionnel-written-1.md'
 import conditionnel_written_2_md from './assets/conditionnel-written-2.md'
 import pronoms_description_md from './assets/pronoms-description.md'
 import pronoms_written_1_md from './assets/pronoms-written-1.md'
+import pronoms_written_2_md from './assets/pronoms-written-2.md'
 import pronoms_written_key_md from './assets/pronoms-written-key.md'
 import pronoms_oral_1_md from './assets/pronoms-oral-1.md'
 import Test from './Test.tsx'
@@ -55,11 +58,12 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                     </App>
                 }></Route>
                 <Route path="/passe-avoir" element={<App><RemoteMarkdown src={passe_avoir_md} /></App>}></Route>
-                <Route path="/passe-avoir-oral" element={<App><RemoteMarkdown src={passe_avoir_oral_md} /></App>}></Route>
+                <Route path="/passe-avoir-oral-1" element={<App><RemoteMarkdown src={passe_avoir_oral_1_md} /></App>}></Route>
+                <Route path="/passe-avoir-oral-2" element={<App><RemoteMarkdown src={passe_avoir_oral_2_md} /></App>}></Route>
                 <Route path="/passe-avoir-written-1" element={<App><RemoteMarkdown src={passe_avoir_written_1_md} /></App>}></Route>
                 <Route path="/passe-avoir-written-2" element={<App><RemoteMarkdown src={passe_avoir_written_2_md} /></App>}></Route>
                 <Route path="/passe-avoir-written-key" element={<App><RemoteMarkdown src={passe_avoir_written_key_md} /></App>}></Route>
-                <Route path="/futur-test" element={<App><ReactMarkdown>## **Le futur simple**</ReactMarkdown><Test questions={[]}></Test></App>}></Route>
+                <Route path="/futur-test" element={<App><ReactMarkdown>## **Le futur simple** Select the correct Future Simple conjugations of the verb. </ReactMarkdown><Test questions={[{"question": "Je manger", "answers": ["Je mange", "Je mangerons", "Je mangerai", "Je mangere"], "correct": 2}, {"question": "Tu faire", "answers": ["Tu fairas", "Tu fera", "Tu faira", "Tu feras"], "correct": 3}, {"question": "Nous dormir", "answers": ["Nous dormirions", "Nous dormiron", "Nous dormirons", "Nous dormons"], "correct": 2}, {"question": "Vous \u00eatre", "answers": ["Vous serez", "Vous seriez", "Vous êtez", "Vous êtrez"], "correct": 0}, {"question": "Ils voyager", "answers": ["Ils voyagent", "Ils voyageont", "Ils voyageront", "Ils voyagerent"], "correct": 2}, {"question": "Je aller", "answers": ["Je irai", "Je aurai", "Je arai", "Je aurai"], "correct": 0}, {"question": "Tu travailler", "answers": ["Tu travaillas", "Tu travailleras", "Tu travailla", "Tu travaillera"], "correct": 1}, {"question": "Elle avoir", "answers": ["Elle auras", "Elle aurai", "Elle aura", "Elle aure"], "correct": 2}, {"question": "Nous acheter", "answers": ["Nous acheterons", "Nous aucherons", "Nous acheterions", "Nous aucherions"], "correct": 0}, {"question": "Je pouvoir", "answers": ["Je pourrons", "Je pourai", "Je pourons", "Je pourrai"], "correct": 3}, {"question": "Vous venir", "answers": ["Vous venez", "Vous vienez", "Vous viendrez", "Vous veidez"], "correct": 2}, {"question": "Tu danser", "answers": ["Tu dansas", "Tu dansera", "Tu danseras", "Tu danse"], "correct": 2}, {"question": "Elles compter", "answers": ["Elles comeront", "Elles comperent", "Elles compteront", "Elles compterent"], "correct": 2}, {"question": "Tu appeler", "answers": ["tu appeles", "tu appelas", "tu appeleras", "tu appeleres"], "correct": 2}, {"question": "Elles decider", "answers": ["Elles decide", "Elles decident", "Elles decideront", "Elles deciderent"], "correct": 2}]}></Test></App>}></Route>
                 <Route path="/futur-written-1" element={<App><RemoteMarkdown src={futur_written_1_md} /></App>}></Route>
                 <Route path="/futur-written-2" element={<App><RemoteMarkdown src={futur_written_2_md} /></App>}></Route>
                 <Route path="/futur-written-key" element={<App><RemoteMarkdown src={futur_written_key_md} /></App>}></Route>
@@ -69,11 +73,13 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                 <Route path="/futur-oral-3" element={<App><RemoteMarkdown src={futur_oral_3_md} /></App>}></Route>
                 <Route path="/futur-cheatsheet" element={<App><RemoteMarkdown src={futur_cheatsheet_md} /></App>}></Route>
                 <Route path="/futur-description" element={<App><RemoteMarkdown src={futur_md} className="no-head"/></App>}></Route>
+                <Route path="/imparfait" element={<App><RemoteMarkdown src={imparfait_md} className="no-head"/></App>}></Route>
                 <Route path="/conditionnel" element={<App><RemoteMarkdown src={conditionnel_md} className="no-head"/></App>}></Route>
                 <Route path="/conditionnel-written-1" element={<App><RemoteMarkdown src={conditionnel_written_1_md} /></App>}></Route>
                 <Route path="/conditionnel-written-2" element={<App><RemoteMarkdown src={conditionnel_written_2_md} /></App>}></Route>
                 <Route path="/pronoms-description" element={<App><RemoteMarkdown src={pronoms_description_md} /></App>}></Route>
                 <Route path="/pronoms-written-1" element={<App><RemoteMarkdown src={pronoms_written_1_md} /></App>}></Route>
+                <Route path="/pronoms-written-2" element={<App><RemoteMarkdown src={pronoms_written_2_md} /></App>}></Route>
                 <Route path="/pronoms-written-key" element={<App><RemoteMarkdown src={pronoms_written_key_md} /></App>}></Route>
                 <Route path="/pronoms-oral-1" element={<App><RemoteMarkdown src={pronoms_oral_1_md} /></App>}></Route>
                 {/* <Route path="/test-maker" element={<App><TestMaker></TestMaker></App>} /> */}

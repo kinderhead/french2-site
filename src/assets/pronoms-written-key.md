@@ -16,3 +16,20 @@ Translate the following sentences from English into French in the space provided
 
 1. You (vous) are making a pizza tonight. You are making it at 6:00.
 **Vous la faites à six heures.**
+
+Convert the following five sentences to use direct or indirect object pronouns.
+ 
+1. Ils veulent manger a McDonald’s.
+**Ils veulent y manger.**
+
+2. Il promène sa chienne.
+**Il la promène.**
+
+3. Je donne elle cinq poulets.
+**Je lui en donne cinq.**
+
+4. Vous parlez à Harold au travail.
+**Vous lui y parlez.**
+
+5. Nous aimons acheter dix boissons à Mike’s.
+**Nous y en aimons acheter dix.**

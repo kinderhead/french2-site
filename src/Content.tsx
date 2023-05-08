@@ -23,10 +23,13 @@ export default function Content(props: PropsWithChildren<object>) {
                                     <Nav.Link>Description</Nav.Link>
                                 </LinkContainer>
                                 <LinkContainer to="/pronoms-oral-1">
-                                    <Nav.Link>Written oral 1</Nav.Link>
+                                    <Nav.Link>Oral activity 1</Nav.Link>
                                 </LinkContainer>
                                 <LinkContainer to="/pronoms-written-1">
                                     <Nav.Link>Written activity 1</Nav.Link>
+                                </LinkContainer>
+                                <LinkContainer to="/pronoms-written-2">
+                                    <Nav.Link>Written activity 2</Nav.Link>
                                 </LinkContainer>
                                 <LinkContainer to="/pronoms-written-key">
                                     <Nav.Link>Written activities key</Nav.Link>
@@ -40,8 +43,11 @@ export default function Content(props: PropsWithChildren<object>) {
                                     <LinkContainer to="/passe-avoir">
                                         <NavDropdown.Item>Description</NavDropdown.Item>
                                     </LinkContainer>
-                                    <LinkContainer to="/passe-avoir-oral">
-                                        <NavDropdown.Item>Oral activity</NavDropdown.Item>
+                                    <LinkContainer to="/passe-avoir-oral-1">
+                                        <NavDropdown.Item>Oral activity 1</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/passe-avoir-oral-2">
+                                        <NavDropdown.Item>Oral activity 2</NavDropdown.Item>
                                     </LinkContainer>
                                     <LinkContainer to="/passe-avoir-written-1">
                                         <NavDropdown.Item>Written activity 1</NavDropdown.Item>
@@ -56,9 +62,11 @@ export default function Content(props: PropsWithChildren<object>) {
                                 <LinkContainer to="/passe-etre">
                                     <NavDropdown.Item>Le passé composé avec être</NavDropdown.Item>
                                 </LinkContainer>
-                                <LinkContainer to="/imparfait">
-                                    <NavDropdown.Item>L’imparfait</NavDropdown.Item>
-                                </LinkContainer>
+                                <NavDropdown drop="end" title="L'imparfait" className="fix-nav">
+                                    <LinkContainer to="/imparfait">
+                                        <NavDropdown.Item>Description</NavDropdown.Item>
+                                    </LinkContainer>
+                                </NavDropdown>
                                 <NavDropdown drop="end" title="Le conditionnel" className="fix-nav">
                                     <LinkContainer to="/conditionnel">
                                         <NavDropdown.Item>Description</NavDropdown.Item>
