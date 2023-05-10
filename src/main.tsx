@@ -27,6 +27,7 @@ import imparfait_oral_1_md from './assets/imparfait-oral-1.md'
 import imparfait_written_1_md from './assets/imparfait-written-1.md'
 import imparfait_written_key_md from './assets/imparfait-written-key.md'
 import conditionnel_md from './assets/conditionnel.md'
+import conditionnel_oral_1_md from './assets/conditionnel-oral-1.md'
 import conditionnel_written_1_md from './assets/conditionnel-written-1.md'
 import conditionnel_written_2_md from './assets/conditionnel-written-2.md'
 import pronoms_description_md from './assets/pronoms-description.md'
@@ -63,6 +64,12 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                             <img src="/french2-site/3.png" />
                             <img src="/french2-site/4.jpg" />
                             <img src="/french2-site/5.png" />
+                            <img src="/french2-site/6.png" />
+                            <img src="/french2-site/7.jpg" />
+                            <img src="/french2-site/8.jpg" />
+                            <img src="/french2-site/9.png" />
+                            <img src="/french2-site/10.png" />
+                            <img src="/french2-site/11.png" />
                         </div>
                     </App>
                 }></Route>
@@ -87,6 +94,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                 <Route path="/imparfait-written-1" element={<App><RemoteMarkdown src={imparfait_written_1_md} className="no-head"/></App>}></Route>
                 <Route path="/imparfait-written-key" element={<App><RemoteMarkdown src={imparfait_written_key_md} className="no-head"/></App>}></Route>
                 <Route path="/conditionnel" element={<App><RemoteMarkdown src={conditionnel_md} className="no-head"/></App>}></Route>
+                <Route path="/conditionnel-oral-1" element={<App><RemoteMarkdown src={conditionnel_oral_1_md} className="no-head"/></App>}></Route>
                 <Route path="/conditionnel-written-1" element={<App><RemoteMarkdown src={conditionnel_written_1_md} /></App>}></Route>
                 <Route path="/conditionnel-written-2" element={<App><RemoteMarkdown src={conditionnel_written_2_md} /></App>}></Route>
                 <Route path="/pronoms-description" element={<App><RemoteMarkdown src={pronoms_description_md} /></App>}></Route>

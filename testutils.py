@@ -1,184 +1,63 @@
 import json
 
-raw = """1)  Je manger
-
-a. Je mange
-
-b. Je mangerons
-
-c. Je mangerai
-
-d. Je mangere
-
-correct - c
-
-2) Tu faire
-
-a. Tu fairas
-
-b. Tu fera
-
-c. Tu faira
-
-d. Tu feras
-
-correct - d
-
-3) Nous dormir
-
-a. Nous dormirions
-
-b. Nous dormiron
-
-c. Nous dormirons
-
-d. Nous dormons
-
-correct - c
-
-4) Vous être
-
-a. Vous serez
-
-b. Vous seriez
-
-c. Vous êtez
-
-d. Vous êtrez
-
-correct - a
-
-5) Ils voyager
-
-a. Ils voyagent
-
-b. Ils voyageont
-
-c. Ils voyageront
-
-d. Ils voyagerent
-
-correct - c
-
-6) Je aller
-
-a. Je irai
-
-b. Je aurai
-
-c. Je arai
-
-d. Je aurai
-
-correct - a
-
-7) Tu travailler
-
-a. Tu travaillas
-
-b. Tu travailleras
-
-c. Tu travailla
-
-d. Tu travaillera
+raw = """1) The direct object pronoun "le" can replace a feminine singular noun.
+a. True
+b. False
 
 correct - b
 
-8) Elle avoir
-
-a. Elle auras
-
-b. Elle aurai
-
-c. Elle aura
-
-d. Elle aure
-
-correct - c
-
-9) Nous acheter
-
-a. Nous acheterons
-
-b. Nous aucherons
-
-c. Nous acheterions
-
-d. Nous aucherions
+2) The indirect object pronoun "leur" is used to replace a plural noun.
+a. True
+b. False
 
 correct - a
 
-10) Je pouvoir
+3) The direct object pronoun comes before the verb in a sentence.
+Je vais t'y voit.
+a. True
+b. False
 
-a. Je pourrons
+correct - a
 
-b. Je pourai
+4) The indirect object pronoun "te" can replace the pronoun "toi."
+a. True
+b. False
 
-c. Je pourons
+5) The direct object pronoun "la" is used to replace a masculine singular noun.
+a. True
+b. False
 
-d. Je pourrai
+correct - b
 
-correct - d
+6) The indirect object pronoun is always placed after the verb.
+a. True
+b. False
 
-11) Vous venir
+correct - b
 
-a. Vous venez
+7) The direct object pronoun "les" can replace both masculine and feminine plural nouns.
+a. True
+b. False
 
-b. Vous vienez
+correct - a
 
-c. Vous viendrez
+8) The indirect object pronoun "me" is used to replace the pronoun "moi."
+a. True
+b. False
 
-d. Vous veidez
+correct - b
 
-correct - c
+9) The direct object pronouns "la" and "les" change to "l'" before a vowel sound.
+a. True
+b. False
 
-12) Tu danser
+correct - a
 
-a. Tu dansas
+10) The indirect object pronoun "lui" can refer to both masculine and feminine nouns.
+a. True
+b. False
 
-b. Tu dansera
-
-c. Tu danseras
-
-d. Tu danse
-
-correct - c
-
-13) Elles compter
-
-a. Elles comeront
-
-b. Elles comperent
-
-c. Elles compteront
-
-d. Elles compterent
-
-correct - c
-
-14) Tu appeler
-
-a. tu appeles
-
-b. tu appelas
-
-c. tu appeleras
-
-d. tu appeleres
-
-correct - c
-
-15) Elles decider
-
-a. Elles decide
-
-b. Elles decident
-
-c. Elles decideront
-
-d. Elles deciderent
-
-correct - c"""
+correct - a"""
 
 questions = raw.split(")")
 data = [];
@@ -189,13 +68,14 @@ for i in questions:
     answers = []
     correct = 0;
     for e in lines[1:]:
+        if "correct" in e.lower():
+            check = e.split("-")[1].strip()
+            if "a" in check: correct = 0
+            if "b" in check: correct = 1
+            if "c" in check: correct = 2
+            if "d" in check: correct = 3
+            continue
         if e.strip() == "" or len(answers) >= 4:
-            if "correct" in e.lower():
-                check = e.split("-")[1].strip()
-                if "a" in check: correct = 0
-                if "b" in check: correct = 1
-                if "c" in check: correct = 2
-                if "d" in check: correct = 3
             continue
         answers.append(e.replace("a.", "").replace("b.", "").replace("c.", "").replace("d.", "").strip())
     data.append({"question": name, "answers": answers, "correct": correct})

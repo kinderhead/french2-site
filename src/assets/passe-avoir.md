@@ -1,7 +1,8 @@
-## **Le passé composé avec avoir**
+## **Le passé composé** 
 
-*The past tense with the verb "Avoir."*
-Le passé composé can be used to express when something has happened. Such as "she ate the sandwich." To properly use le passé composé you must remove the ending root of the word ("er", "ir", or "re") and replace it with the proper conjugation.
+Le passé composé is a way to express things that have already happened. It is specifically used when something is already over and the imperfect tense is used for the ongoing past. For example, "I ate a cookie" would be le passé composé. It is a composed tense, meaning that it is made up of two parts. First there is the auxiliary verb, which comes before the actual verb. This auxiliary verb is most often avoir but certain verbs use être. The second part is the conjugation of the verb. You remove the ir, re, or er and add a i to the end of IRs, é to ERs, and u to REs. Be careful though, some verbs are irregular. 
+
+ex) I ate a cookie - J'ai mangé un biscuit. 
 
 |Type of verb|Conjugation|
 |--|--|

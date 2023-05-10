@@ -85,6 +85,9 @@ export default function Content(props: PropsWithChildren<object>) {
                                     <LinkContainer to="/conditionnel">
                                         <NavDropdown.Item>Description</NavDropdown.Item>
                                     </LinkContainer>
+                                    <LinkContainer to="/conditionnel-oral-1">
+                                        <NavDropdown.Item>Oral activity 1</NavDropdown.Item>
+                                    </LinkContainer>
                                     <LinkContainer to="/conditionnel-written-1">
                                         <NavDropdown.Item>Written activity 1</NavDropdown.Item>
                                     </LinkContainer>

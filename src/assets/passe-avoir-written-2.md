@@ -1,4 +1,4 @@
-## **Le Passé Composé avec Avoir**
+## **Le passé composé**
 
 Write 5 sentences in English in Le Passé Composé and then translate those sentences into French.
 

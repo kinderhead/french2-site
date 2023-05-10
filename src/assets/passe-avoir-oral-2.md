@@ -1,4 +1,4 @@
-## **Le passé composé avec avoir**
+## **Le passé composé**
 
 In a small group discuss things that you experienced last year using the passé composé avec avoir. Try to include different pronouns and verbs.
 
