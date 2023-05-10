@@ -23,6 +23,7 @@ import futur_oral_3_md from './assets/futur-oral-3.md'
 import futur_cheatsheet_md from './assets/futur-cheatsheet.md'
 import futur_md from './assets/futur.md'
 import imparfait_md from './assets/imparfait.md'
+import imparfait_oral_1_md from './assets/imparfait-oral-1.md'
 import imparfait_written_1_md from './assets/imparfait-written-1.md'
 import imparfait_written_key_md from './assets/imparfait-written-key.md'
 import conditionnel_md from './assets/conditionnel.md'
@@ -35,6 +36,10 @@ import pronoms_written_key_md from './assets/pronoms-written-key.md'
 import pronoms_oral_1_md from './assets/pronoms-oral-1.md'
 import subjonctif_md from './assets/subjonctif.md'
 import subjonctif_oral_1_md from './assets/subjonctif-oral-1.md'
+import subjonctif_written_1_md from './assets/subjonctif-written-1.md'
+import literary_oral_1_md from './assets/literary-oral-1.md'
+import literary_written_1_md from './assets/literary-written-1.md'
+import literary_written_key_md from './assets/literary-written-key.md'
 import Test from './Test.tsx'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 
@@ -78,6 +83,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                 <Route path="/futur-cheatsheet" element={<App><RemoteMarkdown src={futur_cheatsheet_md} /></App>}></Route>
                 <Route path="/futur-description" element={<App><RemoteMarkdown src={futur_md} className="no-head"/></App>}></Route>
                 <Route path="/imparfait" element={<App><RemoteMarkdown src={imparfait_md} className="no-head"/></App>}></Route>
+                <Route path="/imparfait-oral-1" element={<App><RemoteMarkdown src={imparfait_oral_1_md} className="no-head"/></App>}></Route>
                 <Route path="/imparfait-written-1" element={<App><RemoteMarkdown src={imparfait_written_1_md} className="no-head"/></App>}></Route>
                 <Route path="/imparfait-written-key" element={<App><RemoteMarkdown src={imparfait_written_key_md} className="no-head"/></App>}></Route>
                 <Route path="/conditionnel" element={<App><RemoteMarkdown src={conditionnel_md} className="no-head"/></App>}></Route>
@@ -89,7 +95,11 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                 <Route path="/pronoms-written-key" element={<App><RemoteMarkdown src={pronoms_written_key_md} /></App>}></Route>
                 <Route path="/pronoms-oral-1" element={<App><RemoteMarkdown src={pronoms_oral_1_md} /></App>}></Route>
                 <Route path="/subjonctif" element={<App><RemoteMarkdown src={subjonctif_md} className="no-head"/></App>}></Route>
+                <Route path="/subjonctif-written-1" element={<App><RemoteMarkdown src={subjonctif_written_1_md} className="no-head"/></App>}></Route>
                 <Route path="/subjonctif-oral-1" element={<App><RemoteMarkdown src={subjonctif_oral_1_md} className="no-head"/></App>}></Route>
+                <Route path="/literary-oral-1" element={<App><RemoteMarkdown src={literary_oral_1_md} className="no-head"/></App>}></Route>
+                <Route path="/literary-written-1" element={<App><RemoteMarkdown src={literary_written_1_md} className="no-head"/></App>}></Route>
+                <Route path="/literary-written-key" element={<App><RemoteMarkdown src={literary_written_key_md} className="no-head"/></App>}></Route>
                 {/* <Route path="/test-maker" element={<App><TestMaker></TestMaker></App>} /> */}
                 <Route path="*" element={<App>404 Page not found</App>} />
             </Routes>
