@@ -12,8 +12,7 @@ b. False
 
 correct - a
 
-3) The direct object pronoun comes before the verb in a sentence.
-Je vais t'y voit.
+3) The direct object pronoun comes before the verb in a sentence. Je vais t'y voit.
 a. True
 b. False
 
@@ -22,6 +21,8 @@ correct - a
 4) The indirect object pronoun "te" can replace the pronoun "toi."
 a. True
 b. False
+
+correct - a
 
 5) The direct object pronoun "la" is used to replace a masculine singular noun.
 a. True
@@ -74,7 +75,7 @@ for i in questions:
             if "b" in check: correct = 1
             if "c" in check: correct = 2
             if "d" in check: correct = 3
-            continue
+            break
         if e.strip() == "" or len(answers) >= 4:
             continue
         answers.append(e.replace("a.", "").replace("b.", "").replace("c.", "").replace("d.", "").strip())

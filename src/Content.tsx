@@ -31,13 +31,22 @@ export default function Content(props: PropsWithChildren<object>) {
                                 <LinkContainer to="/pronoms-written-2">
                                     <Nav.Link>Written activity 2</Nav.Link>
                                 </LinkContainer>
+                                <LinkContainer to="/pronoms-test">
+                                    <Nav.Link>Test</Nav.Link>
+                                </LinkContainer>
                                 <LinkContainer to="/pronoms-written-key">
                                     <Nav.Link>Written activity keys</Nav.Link>
                                 </LinkContainer>
                             </NavDropdown>
                             <NavDropdown title="Les éléments littéraires">
+                                <LinkContainer to="/literary">
+                                    <Nav.Link>Description</Nav.Link>
+                                </LinkContainer>
                                 <LinkContainer to="/literary-oral-1">
                                     <Nav.Link>Oral activity 1</Nav.Link>
+                                </LinkContainer>
+                                <LinkContainer to="/literary-oral-2">
+                                    <Nav.Link>Oral activity 2</Nav.Link>
                                 </LinkContainer>
                                 <LinkContainer to="/literary-written-1">
                                     <Nav.Link>Written activity 1</Nav.Link>
@@ -63,6 +72,15 @@ export default function Content(props: PropsWithChildren<object>) {
                                     <LinkContainer to="/passe-avoir-written-2">
                                         <NavDropdown.Item>Written activity 2</NavDropdown.Item>
                                     </LinkContainer>
+                                    <LinkContainer to="/passe-avoir-written-3">
+                                        <NavDropdown.Item>Written activity 3</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/passe-avoir-written-4">
+                                        <NavDropdown.Item>Written activity 4</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/passe-avoir-cheatsheet">
+                                        <NavDropdown.Item>Cheatsheet</NavDropdown.Item>
+                                    </LinkContainer>
                                     <LinkContainer to="/passe-avoir-written-key">
                                         <NavDropdown.Item>Written activity keys</NavDropdown.Item>
                                     </LinkContainer>
@@ -73,6 +91,9 @@ export default function Content(props: PropsWithChildren<object>) {
                                     </LinkContainer>
                                     <LinkContainer to="/imparfait-oral-1">
                                         <NavDropdown.Item>Oral activity 1</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/imparfait-oral-2">
+                                        <NavDropdown.Item>Oral activity 2</NavDropdown.Item>
                                     </LinkContainer>
                                     <LinkContainer to="/imparfait-written-1">
                                         <NavDropdown.Item>Written activity 1</NavDropdown.Item>
@@ -88,11 +109,17 @@ export default function Content(props: PropsWithChildren<object>) {
                                     <LinkContainer to="/conditionnel-oral-1">
                                         <NavDropdown.Item>Oral activity 1</NavDropdown.Item>
                                     </LinkContainer>
+                                    <LinkContainer to="/conditionnel-oral-2">
+                                        <NavDropdown.Item>Oral activity 2</NavDropdown.Item>
+                                    </LinkContainer>
                                     <LinkContainer to="/conditionnel-written-1">
                                         <NavDropdown.Item>Written activity 1</NavDropdown.Item>
                                     </LinkContainer>
                                     <LinkContainer to="/conditionnel-written-2">
                                         <NavDropdown.Item>Written activity 2</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/conditionnel-written-key">
+                                        <NavDropdown.Item>Written activity key</NavDropdown.Item>
                                     </LinkContainer>
                                 </NavDropdown>
                                 <NavDropdown drop="end" title="Le subjonctif" className="fix-nav">
@@ -102,8 +129,14 @@ export default function Content(props: PropsWithChildren<object>) {
                                     <LinkContainer to="/subjonctif-oral-1">
                                         <NavDropdown.Item>Oral activity 1</NavDropdown.Item>
                                     </LinkContainer>
+                                    <LinkContainer to="/subjonctif-oral-2">
+                                        <NavDropdown.Item>Oral activity 2</NavDropdown.Item>
+                                    </LinkContainer>
                                     <LinkContainer to="/subjonctif-written-1">
                                         <NavDropdown.Item>Written activity 1</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/subjonctif-written-2">
+                                        <NavDropdown.Item>Written activity 2</NavDropdown.Item>
                                     </LinkContainer>
                                 </NavDropdown>
                                 <NavDropdown drop="end" title="Le futur simple" className="fix-nav">
@@ -128,11 +161,11 @@ export default function Content(props: PropsWithChildren<object>) {
                                     <LinkContainer to="/futur-cheatsheet">
                                         <NavDropdown.Item>Cheatsheet</NavDropdown.Item>
                                     </LinkContainer>
-                                    <LinkContainer to="/futur-test">
-                                        <NavDropdown.Item>Test</NavDropdown.Item>
-                                    </LinkContainer>
                                     <LinkContainer to="/futur-written-quiz">
                                         <NavDropdown.Item>Written quiz</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/futur-test">
+                                        <NavDropdown.Item>Test</NavDropdown.Item>
                                     </LinkContainer>
                                     <LinkContainer to="/futur-written-key">
                                         <NavDropdown.Item>Written activity keys</NavDropdown.Item>
