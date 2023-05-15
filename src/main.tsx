@@ -13,7 +13,7 @@ import passe_avoir_oral_2_md from './assets/passe-avoir-oral-2.md'
 import passe_avoir_written_1_md from './assets/passe-avoir-written-1.md'
 import passe_avoir_written_2_md from './assets/passe-avoir-written-2.md'
 import passe_avoir_written_3_md from './assets/passe-avoir-written-3.md'
-import passe_avoir_written_4_md from './assets/passe-avoir-written-4.md'
+import passe_avoir_quiz_md from './assets/passe-avoir-quiz.md'
 import passe_avoir_cheatsheet_md from './assets/passe-avoir-cheatsheet.md'
 import passe_avoir_written_key_md from './assets/passe-avoir-written-key.md'
 import futur_written_1_md from './assets/futur-written-1.md'
@@ -30,12 +30,16 @@ import imparfait_md from './assets/imparfait.md'
 import imparfait_oral_1_md from './assets/imparfait-oral-1.md'
 import imparfait_oral_2_md from './assets/imparfait-oral-2.md'
 import imparfait_written_1_md from './assets/imparfait-written-1.md'
+import imparfait_written_2_md from './assets/imparfait-written-2.md'
+import imparfait_test_md from './assets/imparfait-test.md'
 import imparfait_written_key_md from './assets/imparfait-written-key.md'
 import conditionnel_md from './assets/conditionnel.md'
 import conditionnel_oral_1_md from './assets/conditionnel-oral-1.md'
 import conditionnel_oral_2_md from './assets/conditionnel-oral-2.md'
 import conditionnel_written_1_md from './assets/conditionnel-written-1.md'
 import conditionnel_written_2_md from './assets/conditionnel-written-2.md'
+import conditionnel_quiz_md from './assets/conditionnel-quiz.md'
+import conditionnel_quiz_key_md from './assets/conditionnel-quiz-key.md'
 import conditionnel_written_key_md from './assets/conditionnel-written-key.md'
 import pronoms_description_md from './assets/pronoms-description.md'
 import pronoms_written_1_md from './assets/pronoms-written-1.md'
@@ -52,6 +56,7 @@ import literary_md from './assets/literary.md'
 import literary_oral_1_md from './assets/literary-oral-1.md'
 import literary_oral_2_md from './assets/literary-oral-2.md'
 import literary_written_1_md from './assets/literary-written-1.md'
+import literary_written_2_md from './assets/literary-written-2.md'
 import literary_written_key_md from './assets/literary-written-key.md'
 import Test from './Test.tsx'
 
@@ -86,6 +91,8 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                             <img src="/french2-site/14.png" />
                             <img src="/french2-site/15.png" />
                             <img src="/french2-site/16.png" />
+                            <img src="/french2-site/17.png" />
+                            <img src="/french2-site/18.png" />
                         </div>
                     </App>
                 }></Route>
@@ -95,7 +102,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                 <Route path="/passe-avoir-written-1" element={<App><RemoteMarkdown src={passe_avoir_written_1_md} /></App>}></Route>
                 <Route path="/passe-avoir-written-2" element={<App><RemoteMarkdown src={passe_avoir_written_2_md} /></App>}></Route>
                 <Route path="/passe-avoir-written-3" element={<App><RemoteMarkdown src={passe_avoir_written_3_md} /></App>}></Route>
-                <Route path="/passe-avoir-written-4" element={<App><RemoteMarkdown src={passe_avoir_written_4_md} /></App>}></Route>
+                <Route path="/passe-avoir-quiz" element={<App><RemoteMarkdown src={passe_avoir_quiz_md} /></App>}></Route>
                 <Route path="/passe-avoir-cheatsheet" element={<App><RemoteMarkdown src={passe_avoir_cheatsheet_md} /></App>}></Route>
                 <Route path="/passe-avoir-written-key" element={<App><RemoteMarkdown src={passe_avoir_written_key_md} /></App>}></Route>
                 <Route path="/futur-test" element={<App><RemoteMarkdown src={futur_test_md} /><Test questions={[{"question": "Je manger", "answers": ["Je mange", "Je mangerons", "Je mangerai", "Je mangere"], "correct": 2}, {"question": "Tu faire", "answers": ["Tu fairas", "Tu fera", "Tu faira", "Tu feras"], "correct": 3}, {"question": "Nous dormir", "answers": ["Nous dormirions", "Nous dormiron", "Nous dormirons", "Nous dormons"], "correct": 2}, {"question": "Vous \u00eatre", "answers": ["Vous serez", "Vous seriez", "Vous êtez", "Vous êtrez"], "correct": 0}, {"question": "Ils voyager", "answers": ["Ils voyagent", "Ils voyageont", "Ils voyageront", "Ils voyagerent"], "correct": 2}, {"question": "Je aller", "answers": ["Je irai", "Je aurai", "Je arai", "Je aurai"], "correct": 0}, {"question": "Tu travailler", "answers": ["Tu travaillas", "Tu travailleras", "Tu travailla", "Tu travaillera"], "correct": 1}, {"question": "Elle avoir", "answers": ["Elle auras", "Elle aurai", "Elle aura", "Elle aure"], "correct": 2}, {"question": "Nous acheter", "answers": ["Nous acheterons", "Nous aucherons", "Nous acheterions", "Nous aucherions"], "correct": 0}, {"question": "Je pouvoir", "answers": ["Je pourrons", "Je pourai", "Je pourons", "Je pourrai"], "correct": 3}, {"question": "Vous venir", "answers": ["Vous venez", "Vous vienez", "Vous viendrez", "Vous veidez"], "correct": 2}, {"question": "Tu danser", "answers": ["Tu dansas", "Tu dansera", "Tu danseras", "Tu danse"], "correct": 2}, {"question": "Elles compter", "answers": ["Elles comeront", "Elles comperent", "Elles compteront", "Elles compterent"], "correct": 2}, {"question": "Tu appeler", "answers": ["tu appeles", "tu appelas", "tu appeleras", "tu appeleres"], "correct": 2}, {"question": "Elles decider", "answers": ["Elles decide", "Elles decident", "Elles decideront", "Elles deciderent"], "correct": 2}]}></Test></App>}></Route>
@@ -112,12 +119,16 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                 <Route path="/imparfait-oral-1" element={<App><RemoteMarkdown src={imparfait_oral_1_md} className="no-head"/></App>}></Route>
                 <Route path="/imparfait-oral-2" element={<App><RemoteMarkdown src={imparfait_oral_2_md} className="no-head"/></App>}></Route>
                 <Route path="/imparfait-written-1" element={<App><RemoteMarkdown src={imparfait_written_1_md} className="no-head"/></App>}></Route>
+                <Route path="/imparfait-written-2" element={<App><RemoteMarkdown src={imparfait_written_2_md} className="no-head"/></App>}></Route>
+                <Route path="/imparfait-test" element={<App><RemoteMarkdown src={imparfait_test_md} /><Test questions={[{"question": "Je faire", "answers": ["Je frait", "Je frias", "Je faisais", "Je fains"], "correct": 2}, {"question": "Elles faire", "answers": ["Elles faire", "Elle faisent", "Elle iassion", "Elles faisaient"], "correct": 3}, {"question": "Tu \u00e9tudier", "answers": ["Tu \u00e9tudiais", "Tu \u00e9tudiens", "Vous \u00e9tudiez", "Tu \u00e9tudias"], "correct": 0}, {"question": "Vous aller", "answers": ["Vous allies", "Vous alliez", "Vous allions", "Vous aller"], "correct": 1}, {"question": "Nous \u00eatre", "answers": ["Nous \u00eatren", "Nous \u00eatrions", "Nous \u00eations", "Nous \u00eatre"], "correct": 2}, {"question": "Il perler", "answers": ["Il parlait", "Il parliet", "Il parliez", "Il parit"], "correct": 0}, {"question": "On finir", "answers": ["On finiez", "On finissont", "On finissat", "On finissait"], "correct": 3}]}></Test></App>}></Route>
                 <Route path="/imparfait-written-key" element={<App><RemoteMarkdown src={imparfait_written_key_md} className="no-head"/></App>}></Route>
                 <Route path="/conditionnel" element={<App><RemoteMarkdown src={conditionnel_md} className="no-head"/></App>}></Route>
                 <Route path="/conditionnel-oral-1" element={<App><RemoteMarkdown src={conditionnel_oral_1_md} className="no-head"/></App>}></Route>
                 <Route path="/conditionnel-oral-2" element={<App><RemoteMarkdown src={conditionnel_oral_2_md} className="no-head"/></App>}></Route>
                 <Route path="/conditionnel-written-1" element={<App><RemoteMarkdown src={conditionnel_written_1_md} /></App>}></Route>
                 <Route path="/conditionnel-written-2" element={<App><RemoteMarkdown src={conditionnel_written_2_md} /></App>}></Route>
+                <Route path="/conditionnel-quiz" element={<App><RemoteMarkdown src={conditionnel_quiz_md} /></App>}></Route>
+                <Route path="/conditionnel-quiz-key" element={<App><RemoteMarkdown src={conditionnel_quiz_key_md} /></App>}></Route>
                 <Route path="/conditionnel-written-key" element={<App><RemoteMarkdown src={conditionnel_written_key_md} /></App>}></Route>
                 <Route path="/pronoms-description" element={<App><RemoteMarkdown src={pronoms_description_md} /></App>}></Route>
                 <Route path="/pronoms-written-1" element={<App><RemoteMarkdown src={pronoms_written_1_md} /></App>}></Route>
@@ -134,6 +145,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                 <Route path="/literary-oral-1" element={<App><RemoteMarkdown src={literary_oral_1_md} className="no-head"/></App>}></Route>
                 <Route path="/literary-oral-2" element={<App><RemoteMarkdown src={literary_oral_2_md} className="no-head"/></App>}></Route>
                 <Route path="/literary-written-1" element={<App><RemoteMarkdown src={literary_written_1_md} className="no-head"/></App>}></Route>
+                <Route path="/literary-written-2" element={<App><RemoteMarkdown src={literary_written_2_md} className="no-head"/></App>}></Route>
                 <Route path="/literary-written-key" element={<App><RemoteMarkdown src={literary_written_key_md} className="no-head"/></App>}></Route>
                 {/* <Route path="/test-maker" element={<App><TestMaker></TestMaker></App>} /> */}
                 <Route path="*" element={<App>404 Page not found</App>} />

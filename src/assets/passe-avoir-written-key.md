@@ -23,7 +23,7 @@ Translate the following sentences from French into English in the space provided
 1. Tu as epousé elle?
 **You married her?**
 
-Written activity 3:
+Translate these sentences with vandertramp verbs from English to French.
 
 1) Elles sont montées dans la voiture ce matin.
 
