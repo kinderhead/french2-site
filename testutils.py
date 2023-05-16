@@ -1,47 +1,116 @@
 import json
 
-raw = """1) Je faire  
-a.  Je frait
-b.  Je frias
-c.  Je faisais
-d.  Je fains
+raw = """1) What is the proper conjugation for the je form of avoir in the subjonctif?
+
+a. ais
+
+b. ait
+
+c. aie
+
+d. avoir
+
 correct - c
-2) Elles faire
-a.  Elles faire
-b.  Elle faisent
-c.  Elle iassion
-d.  Elles faisaient
-correct - d
-3) Tu étudier
-a.  Tu étudiais
-b. Tu étudiens
-c.  Vous étudiez
-d.  Tu étudias
-correct - a
-4) Vous aller
-a.  Vous allies
-b.  Vous alliez
-c.  Vous allions
-d.  Vous aller  
+
+2) What is the proper conjugation for the tu form of être in the subjonctif?
+
+a. ait
+
+b. sois
+
+c. être
+
+b. etois
+
 correct - b
-5) Nous être
-a.  Nous êtren
-b.  Nous êtrions
-c.  Nous êtions
-d.  Nous être
-correct - c
-6) Il perler
-a.  Il parlait
-b.  Il parliet
-c.  Il parliez
-d.  Il parit
+
+3) What is the proper conjugation for the il/elle/on form of aller in the subjonctif?
+
+a. aille
+
+b. allais
+
+c. aller
+
+d. ait
+
 correct - a
-7) On finir
-a.  On finiez
-b.  On finissont
-c.  On finissat
-d.  On finissait
-correct - d"""
+
+4) What is the proper conjugation for the vous form of faire in the subjonctif?
+
+a. faire
+
+b. fasse
+
+c. fairez
+
+d. fassiez
+
+correct - d
+
+5) What is the proper conjugation for the nous form of savoir in the subjonctif?
+
+a. savions
+
+b. savoir
+
+c. savons
+
+d. sachions
+
+correct - d
+
+6) What is the proper conjugation for the ils/elles form of pouvoir in the subjonctif?
+
+a. pouvoir
+
+b. pouvent
+
+c. puissent
+
+d. pouvisent
+
+correct - c
+
+7) Is the subjonctif a tense?
+
+a. Yes
+
+b. No
+
+correct - b
+
+8) Does a statement in the subjonctif need to be prefaced with an expression such as “il faut que”?
+
+a. Yes
+
+b. No
+
+correct - a
+
+9) What is the subjonctif used to express?
+
+a. Uncertainty
+
+b. Needing to do something
+
+c. All of the above
+
+d. Neither
+
+correct - c
+
+10) What form of a present tense verb has its ending changed to form the verb in the subjonctif?
+
+a. Ils/elles
+
+b. Vous
+
+c. The infinitive
+
+d. Il/elle
+
+correct - a"""
 
 questions = raw.split(")")
 data = [];

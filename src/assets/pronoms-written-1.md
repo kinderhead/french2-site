@@ -6,7 +6,7 @@ Translate the following sentences from English into French in the space provided
 
 2. You (tu) are eating a cookie, aren’t you? You are eating it, right?
 
-3. Marc has a new brown dog. He has it in the house.
+3. Marc has a new brown dog. He has him in the house.
 
 4. We are doing our homework together. We are doing it after class.
 
