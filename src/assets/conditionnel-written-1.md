@@ -1,7 +1,7 @@
 ## **Le conditionnel**
 
 1.  Correctly translate the word in parentheses to english then
-conjugate to Le conditionnel (For some extra practice- translate to
+conjugate to Le conditionnel (For some extra practice translate to
 English afterwards!)
 
 * Je (to eat)_____ du fromage
