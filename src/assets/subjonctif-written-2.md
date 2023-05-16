@@ -1,6 +1,6 @@
 ## **Le subjonctif**
 
-On a sheet of paper write five sentences using the Subjunctive mood
+On a sheet of paper write five sentences using the subjunctive mood
 (include a variety of pronouns to practice verb endings).
 
 After you finish your sentences, hand it to a partner and have them
