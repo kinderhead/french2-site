@@ -52,12 +52,14 @@ import subjonctif_oral_1_md from './assets/subjonctif-oral-1.md'
 import subjonctif_oral_2_md from './assets/subjonctif-oral-2.md'
 import subjonctif_written_1_md from './assets/subjonctif-written-1.md'
 import subjonctif_written_2_md from './assets/subjonctif-written-2.md'
+import subjonctif_test_md from './assets/subjonctif-test.md'
 import literary_md from './assets/literary.md'
 import literary_oral_1_md from './assets/literary-oral-1.md'
 import literary_oral_2_md from './assets/literary-oral-2.md'
 import literary_written_1_md from './assets/literary-written-1.md'
 import literary_written_2_md from './assets/literary-written-2.md'
 import literary_written_key_md from './assets/literary-written-key.md'
+import literary_test_md from './assets/literary-test.md'
 import Test from './Test.tsx'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
@@ -93,6 +95,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                             <img src="/french2-site/16.png" />
                             <img src="/french2-site/17.png" />
                             <img src="/french2-site/18.png" />
+                            <img src="/french2-site/19.png" />
                         </div>
                     </App>
                 }></Route>
@@ -141,12 +144,14 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                 <Route path="/subjonctif-written-2" element={<App><RemoteMarkdown src={subjonctif_written_2_md} className="no-head"/></App>}></Route>
                 <Route path="/subjonctif-oral-1" element={<App><RemoteMarkdown src={subjonctif_oral_1_md} className="no-head"/></App>}></Route>
                 <Route path="/subjonctif-oral-2" element={<App><RemoteMarkdown src={subjonctif_oral_2_md} className="no-head"/></App>}></Route>
+                <Route path="/subjonctif-test" element={<App><RemoteMarkdown src={subjonctif_test_md} /><Test questions={[{"question": "What is the proper conjugation for the je form of avoir in the subjonctif?", "answers": ["ais", "ait", "aie", "avoir"], "correct": 2}, {"question": "What is the proper conjugation for the tu form of \u00eatre in the subjonctif?", "answers": ["ait", "sois", "\u00eatre", "etois"], "correct": 1}, {"question": "What is the proper conjugation for the il/elle/on form of aller in the subjonctif?", "answers": ["aille", "allais", "aller", "ait"], "correct": 0}, {"question": "What is the proper conjugation for the vous form of faire in the subjonctif?", "answers": ["faire", "fasse", "fairez", "fassiez"], "correct": 3}, {"question": "What is the proper conjugation for the nous form of savoir in the subjonctif?", "answers": ["savions", "savoir", "savons", "sachions"], "correct": 3}, {"question": "What is the proper conjugation for the ils/elles form of pouvoir in the subjonctif?", "answers": ["pouvoir", "pouvent", "puissent", "pouvisent"], "correct": 2}, {"question": "Is the subjonctif a tense?", "answers": ["Yes", "No"], "correct": 1}, {"question": "Does a statement in the subjonctif need to be prefaced with an expression such as \u201cil faut que\u201d?", "answers": ["Yes", "No"], "correct": 0}, {"question": "What is the subjonctif used to express?", "answers": ["Uncertainty", "Needing to do something", "All of the above", "Neither"], "correct": 2}, {"question": "What form of a present tense verb has its ending changed to form the verb in the subjonctif?", "answers": ["Ils/elles", "Vous", "The infinitive", "Il/elle"], "correct": 0}]}></Test></App>}></Route>
                 <Route path="/literary" element={<App><RemoteMarkdown src={literary_md} className="no-head"/></App>}></Route>
                 <Route path="/literary-oral-1" element={<App><RemoteMarkdown src={literary_oral_1_md} className="no-head"/></App>}></Route>
                 <Route path="/literary-oral-2" element={<App><RemoteMarkdown src={literary_oral_2_md} className="no-head"/></App>}></Route>
                 <Route path="/literary-written-1" element={<App><RemoteMarkdown src={literary_written_1_md} className="no-head"/></App>}></Route>
                 <Route path="/literary-written-2" element={<App><RemoteMarkdown src={literary_written_2_md} className="no-head"/></App>}></Route>
                 <Route path="/literary-written-key" element={<App><RemoteMarkdown src={literary_written_key_md} className="no-head"/></App>}></Route>
+                <Route path="/literary-test" element={<App><RemoteMarkdown src={literary_test_md} /><Test questions={[{"question": "Le cadre de l'histoire", "answers": ["Le personnage ou la force contre le personnage principal.", "L'histoire atteint son point culminant", "L'endroit o\u00f9 se d\u00e9roule la narrative.", "Une figure de style fond\u00e9e sur l'analogie."], "correct": 2}, {"question": "M\u00e9taphore", "answers": ["Une figure de style fond\u00e9e sur l'analogie.", "Les sentiments et les attitudes que l'auteur a impliqu\u00e9 dans l'\u0153uvre.", "Rupture de la continuit\u00e9 chronologique une p\u00e9riode ant\u00e9rieure.", "Un indice \u00e0 ce qui viendra plus tard dans l\u2019histoire."], "correct": 0}, {"question": "Le ton", "answers": ["Le personnage ou la force contre le personnage principal.", "Les sentiments et les attitudes que l'auteur a impliqu\u00e9 dans l'\u0153uvre.", "Un indice \u00e0 ce qui viendra plus tard dans l\u2019histoire.", "La r\u00e9solution du probl\u00e9matique."], "correct": 1}, {"question": "Protagoniste", "answers": ["L'endroit o\u00f9 se d\u00e9roule la narrative.", "Le message principal de l'\u0153uvre", "L'\u00e9motion dominant qui s'empresse sur le lecteur.", "Le personnage principal de l\u2019histoire."], "correct": 3}, {"question": "L'apog\u00e9e", "answers": ["Une figure de style fond\u00e9e sur l'analogie.", "L'histoire atteint son point culminant", "Comparaison de deux choses.", "Rupture de la continuit\u00e9 chronologique une p\u00e9riode ant\u00e9rieure."], "correct": 1}, {"question": "Les actions d'un personnage motiv\u00e9 \u00e0 r\u00e9soudre un conflit.", "answers": ["Le intrigue de l'histoire", "Antogoniste", "M\u00e9taphore", "Le cadre de l'histoire"], "correct": 0}, {"question": "Le personnage ou la force contre le personnage principal.", "answers": ["Un retour en arri\u00e8re", "Antagoniste", "L'apog\u00e9e", "Le pr\u00e9sage"], "correct": 1}, {"question": "L'\u00e9motion dominant qui s'empresse sur le lecteur.", "answers": ["Personnage", "Le ton", "L'humeur", "Comparaison"], "correct": 2}, {"question": "Le message principal de l'\u0153uvre", "answers": ["Le theme", "Le ton", "Protagoniste", "Le pr\u00e9sage"], "correct": 0}, {"question": "La r\u00e9solution du probl\u00e9matique.", "answers": ["M\u00e9taphore", "Personnification", "Le cadre de l'histoire", "Le d\u00e9noument"], "correct": 3}]}></Test></App>}></Route>
                 {/* <Route path="/test-maker" element={<App><TestMaker></TestMaker></App>} /> */}
                 <Route path="*" element={<App>404 Page not found</App>} />
             </Routes>

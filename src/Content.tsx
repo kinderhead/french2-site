@@ -54,6 +54,9 @@ export default function Content(props: PropsWithChildren<object>) {
                                 <LinkContainer to="/literary-written-2">
                                     <Nav.Link>Written activity 2</Nav.Link>
                                 </LinkContainer>
+                                <LinkContainer to="/literary-test">
+                                    <Nav.Link>Test</Nav.Link>
+                                </LinkContainer>
                                 <LinkContainer to="/literary-written-key">
                                     <Nav.Link>Written activity keys</Nav.Link>
                                 </LinkContainer>
@@ -152,6 +155,9 @@ export default function Content(props: PropsWithChildren<object>) {
                                     </LinkContainer>
                                     <LinkContainer to="/subjonctif-written-2">
                                         <NavDropdown.Item>Written activity 2</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/subjonctif-test">
+                                        <NavDropdown.Item>Test</NavDropdown.Item>
                                     </LinkContainer>
                                 </NavDropdown>
                                 <NavDropdown drop="end" title="Le futur simple" className="fix-nav">
