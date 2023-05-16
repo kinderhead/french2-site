@@ -96,6 +96,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                             <img src="/french2-site/17.png" />
                             <img src="/french2-site/18.png" />
                             <img src="/french2-site/19.png" />
+                            <img src="/french2-site/20.jpg" />
                         </div>
                     </App>
                 }></Route>
@@ -117,7 +118,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                 <Route path="/futur-oral-2" element={<App><RemoteMarkdown src={futur_oral_2_md} /></App>}></Route>
                 <Route path="/futur-oral-3" element={<App><RemoteMarkdown src={futur_oral_3_md} /></App>}></Route>
                 <Route path="/futur-cheatsheet" element={<App><RemoteMarkdown src={futur_cheatsheet_md} /></App>}></Route>
-                <Route path="/futur-description" element={<App><RemoteMarkdown src={futur_md} className="no-head"/></App>}></Route>
+                <Route path="/futur-description" element={<App><RemoteMarkdown src={futur_md}/></App>}></Route>
                 <Route path="/imparfait" element={<App><RemoteMarkdown src={imparfait_md} className="no-head"/></App>}></Route>
                 <Route path="/imparfait-oral-1" element={<App><RemoteMarkdown src={imparfait_oral_1_md} className="no-head"/></App>}></Route>
                 <Route path="/imparfait-oral-2" element={<App><RemoteMarkdown src={imparfait_oral_2_md} className="no-head"/></App>}></Route>

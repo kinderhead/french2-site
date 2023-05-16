@@ -1,10 +1,14 @@
 ## **L'imparfait**
 Lesson
 L'imparfait describes:
-(a)   What things were like in the past
-(b)   What used to happen in the past
-(c).   What you were doing
-(d)    Repeated actions in the past
+
+a)   What things were like in the past
+
+b)   What used to happen in the past
+
+c)   What you were doing
+
+d)   Repeated actions in the past
 
 The trick to form sentences in the imperfect tense!
 1. Take the nous part of the present tense
