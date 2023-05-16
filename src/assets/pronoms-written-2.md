@@ -1,6 +1,6 @@
 ## **Les pronoms diréct et indiréct**
 
-Convert the following five sentences to use direct or indirect object pronouns.
+Rewrite the sentences, replacing the proper noun with a direct or indirect pronoun.
  
 1. Ils veulent manger a McDonald’s.
 

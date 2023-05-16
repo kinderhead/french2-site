@@ -8,10 +8,10 @@ Nous **faisions**
 Vous **faisiez**
 Ils/elles **faisaient**
 
-2)Translate the following to french
+2) Translate the following to french
 a. Quand j'étais jeune, je vivais à Portland
 b. Il y a cinq ans, nous allions à Paris en été.
-c. Jouiez-vous au tennis lorsque vous étudiiez à Montréal?
+c. Jouiez-vous au tennis lorsque vous étudiez à Montréal?
 
 3) Translate the following into english
 a. Ten years ago I lived in Quebec with my family.
