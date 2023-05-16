@@ -1,6 +1,6 @@
 ## **Le passé composé**
 
-Translate the following sentences from French into English in the space provided. Then negate the sentence.
+Translate the following sentences from French into English in the space provided. Then negate the sentence in french.
 
 1. Elle a mangé la pomme.
 

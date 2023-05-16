@@ -22,3 +22,15 @@ Translate the following sentences from French into English in the space provided
 
 1. Tu as epousé elle?
 **You married her?**
+
+Translate these sentences with vandertramp verbs from English to French.
+
+1) Elles sont montées dans la voiture ce matin.
+
+2) Nous avons alles aux catacombes.
+
+3) Tu as né(e) il y a une décennie.
+
+4) Je suis parti(e) la fête à huit heures.
+
+5) Vous avez tombé(e) de l'échelle. 

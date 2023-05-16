@@ -1,63 +1,47 @@
 import json
 
-raw = """1) The direct object pronoun "le" can replace a feminine singular noun.
-a. True
-b. False
-
-correct - b
-
-2) The indirect object pronoun "leur" is used to replace a plural noun.
-a. True
-b. False
-
+raw = """1) Je faire  
+a.  Je frait
+b.  Je frias
+c.  Je faisais
+d.  Je fains
+correct - c
+2) Elles faire
+a.  Elles faire
+b.  Elle faisent
+c.  Elle iassion
+d.  Elles faisaient
+correct - d
+3) Tu étudier
+a.  Tu étudiais
+b. Tu étudiens
+c.  Vous étudiez
+d.  Tu étudias
 correct - a
-
-3) The direct object pronoun comes before the verb in a sentence.
-Je vais t'y voit.
-a. True
-b. False
-
-correct - a
-
-4) The indirect object pronoun "te" can replace the pronoun "toi."
-a. True
-b. False
-
-5) The direct object pronoun "la" is used to replace a masculine singular noun.
-a. True
-b. False
-
+4) Vous aller
+a.  Vous allies
+b.  Vous alliez
+c.  Vous allions
+d.  Vous aller  
 correct - b
-
-6) The indirect object pronoun is always placed after the verb.
-a. True
-b. False
-
-correct - b
-
-7) The direct object pronoun "les" can replace both masculine and feminine plural nouns.
-a. True
-b. False
-
+5) Nous être
+a.  Nous êtren
+b.  Nous êtrions
+c.  Nous êtions
+d.  Nous être
+correct - c
+6) Il perler
+a.  Il parlait
+b.  Il parliet
+c.  Il parliez
+d.  Il parit
 correct - a
-
-8) The indirect object pronoun "me" is used to replace the pronoun "moi."
-a. True
-b. False
-
-correct - b
-
-9) The direct object pronouns "la" and "les" change to "l'" before a vowel sound.
-a. True
-b. False
-
-correct - a
-
-10) The indirect object pronoun "lui" can refer to both masculine and feminine nouns.
-a. True
-b. False
-
-correct - a"""
+7) On finir
+a.  On finiez
+b.  On finissont
+c.  On finissat
+d.  On finissait
+correct - d"""
 
 questions = raw.split(")")
 data = [];
@@ -74,7 +58,7 @@ for i in questions:
             if "b" in check: correct = 1
             if "c" in check: correct = 2
             if "d" in check: correct = 3
-            continue
+            break
         if e.strip() == "" or len(answers) >= 4:
             continue
         answers.append(e.replace("a.", "").replace("b.", "").replace("c.", "").replace("d.", "").strip())
