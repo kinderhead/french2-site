@@ -1,6 +1,6 @@
 ## **L'imparfait**
 
-1) Conjugate the very Faire in all pronouns:
+1) Conjugate the verb Faire in all pronouns:
 
 Je
 
