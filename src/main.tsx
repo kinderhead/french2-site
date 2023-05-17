@@ -46,6 +46,7 @@ import pronoms_written_1_md from './assets/pronoms-written-1.md'
 import pronoms_written_2_md from './assets/pronoms-written-2.md'
 import pronoms_written_key_md from './assets/pronoms-written-key.md'
 import pronoms_oral_1_md from './assets/pronoms-oral-1.md'
+import pronoms_oral_2_md from './assets/pronoms-oral-2.md'
 import pronoms_test_md from './assets/pronoms-test.md'
 import subjonctif_md from './assets/subjonctif.md'
 import subjonctif_oral_1_md from './assets/subjonctif-oral-1.md'
@@ -139,6 +140,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                 <Route path="/pronoms-written-2" element={<App><RemoteMarkdown src={pronoms_written_2_md} /></App>}></Route>
                 <Route path="/pronoms-written-key" element={<App><RemoteMarkdown src={pronoms_written_key_md} /></App>}></Route>
                 <Route path="/pronoms-oral-1" element={<App><RemoteMarkdown src={pronoms_oral_1_md} /></App>}></Route>
+                <Route path="/pronoms-oral-2" element={<App><RemoteMarkdown src={pronoms_oral_2_md} /></App>}></Route>
                 <Route path="/pronoms-test" element={<App><RemoteMarkdown src={pronoms_test_md} /><Test questions={[{"question": "The direct object pronoun \"le\" can replace a feminine singular noun.", "answers": ["True", "False"], "correct": 1}, {"question": "The indirect object pronoun \"leur\" is used to replace a plural noun.", "answers": ["True", "False"], "correct": 0}, {"question": "The direct object pronoun comes before the verb in a sentence.", "answers": ["True", "False"], "correct": 0}, {"question": "The indirect object pronoun \"te\" can replace the pronoun \"toi.\"", "answers": ["True", "False"], "correct": 0}, {"question": "The direct object pronoun \"la\" is used to replace a masculine singular noun.", "answers": ["True", "False"], "correct": 1}, {"question": "The indirect object pronoun is always placed after the verb.", "answers": ["True", "False"], "correct": 1}, {"question": "The direct object pronoun \"les\" can replace both masculine and feminine plural nouns.", "answers": ["True", "False"], "correct": 0}, {"question": "The indirect object pronoun \"me\" is used to replace the pronoun \"moi.\"", "answers": ["True", "False"], "correct": 0}, {"question": "The direct object pronouns \"la\" and \"les\" change to \"l'\" before a vowel sound.", "answers": ["True", "False"], "correct": 0}, {"question": "The indirect object pronoun \"lui\" can refer to both masculine and feminine nouns.", "answers": ["True", "False"], "correct": 0}]}></Test></App>}></Route>
                 <Route path="/subjonctif" element={<App><RemoteMarkdown src={subjonctif_md} className="no-head"/></App>}></Route>
                 <Route path="/subjonctif-written-1" element={<App><RemoteMarkdown src={subjonctif_written_1_md} className="no-head"/></App>}></Route>

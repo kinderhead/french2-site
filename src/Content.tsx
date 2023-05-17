@@ -25,6 +25,9 @@ export default function Content(props: PropsWithChildren<object>) {
                                 <LinkContainer to="/pronoms-oral-1">
                                     <Nav.Link>Oral activity 1</Nav.Link>
                                 </LinkContainer>
+                                <LinkContainer to="/pronoms-oral-2">
+                                    <Nav.Link>Oral activity 2</Nav.Link>
+                                </LinkContainer>
                                 <LinkContainer to="/pronoms-written-1">
                                     <Nav.Link>Written activity 1</Nav.Link>
                                 </LinkContainer>

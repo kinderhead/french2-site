@@ -35,7 +35,8 @@ export default function Test({ questions }: TestProps) {
                             );
                         })
                     }
-                <hr/>
+                    <hr />
+                {score}
                 <Button ref={button} key="submit" onClick={() => {
                         var correct = 0;
                         questions.forEach(i => {
@@ -63,7 +64,6 @@ export default function Test({ questions }: TestProps) {
                 </Form.Group>
             </Form>
             <br/>
-            {score}
         </>
     );
 }
